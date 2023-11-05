@@ -16,14 +16,19 @@ Repositori ini berisi semua tugas, latihan, dan proyek yang saya kerjakan selama
 
 - `Pertemuan1/`: Tugas dan latihan dari pertemuan pertama
 - `Pertemuan2/`: Tugas dan latihan dari pertemuan kedua
-... (dan seterusnya)
+- `Pertemuan3/`: Tugas dan latihan dari pertemuan kedua
+- `Pertemuan4/`: Tugas dan latihan dari pertemuan kedua
+- `Pertemuan5/`: Tugas dan latihan dari pertemuan kedua
+- dst..
+
 
 ## Teknologi yang Digunakan
 
 - **Python**
 - **Pandas, Numpy**
 - **scikit-learn**
-- ... (dan teknologi lain yang Anda gunakan)
+- **flask**
+- **joblib**
 
 ## Lisensi
 
