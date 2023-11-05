@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Price Predictor</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Prediksi Harga Gitar</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form action="/" method="post">
+                <div class="mb-3">
+                    <label for="merek" class="form-label">Merek Gitar</label>
+                    <select name="merek" class="form-select">
+                        <option value="Epiphone">Epiphone</option>
+                        <option value="Fender">Fender</option>
+                        <option value="Ibanez">Ibanez</option>
+                        <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="tipe" class="form-label">Tipe Gitar</label>
+                    <select name="tipe" class="form-select">
+                        <option value="Akustik">Akustik</option>
+                        <option value="Elektrik">Elektrik</option>
+                        <option value="Bass">Bass</option>
+                        <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="warna" class="form-label">Warna</label>
+                    <select name="warna" class="form-select">
+                        <option value="Biru">Biru</option>
+                        <option value="Hitam">Hitam</option>
+                        <option value="Coklat">Coklat</option>
+                        <option value="Merah">Merah</option>
+                        <option value="Putih">Putih</option>
+                        <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Prediksi Harga</button>
+            </form>
+
+            {% if prediction %}
+            <div class="mt-4">
+                <h4>Detail Input:</h4>
+                <ul>
+                    <li>Merek Gitar: {{ merek }}</li>
+                    <li>Tipe Gitar: {{ tipe }}</li>
+                    <li>Warna: {{ warna }}</li>
+                </ul>
+                <h3>Estimated Price: {{ prediction }} Juta</h3>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+,country,age,salary,purchased
+1,USA,34,72000,no
+2,Canada,29,48000,yes
+3,UK,43,65000,yes
+4,Australia,25,52000,no
+5,India,30,,yes
+6,China,37,67000,yes
+7,Brazil,,62000,no
+8,Spain,28,59000,no
+9,Germany,40,71000,yes
+10,France,31,55000,no
